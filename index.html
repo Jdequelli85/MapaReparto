@@ -7,7 +7,7 @@ html,body,#map{height:100%;margin:0}.box{position:absolute;z-index:9999;left:12p
 #searchBarrio{box-sizing:border-box;width:100%;padding:8px 9px;border:1px solid #b8c3cc;border-radius:6px;font-size:13px;outline:none}
 #searchBarrio:focus{border-color:#2878b8;box-shadow:0 0 0 2px #2878b833}
 #searchMsg{font-size:11px;color:#555;margin-top:5px;min-height:14px}
-.row{display:grid;grid-template-columns:22px 55px 65px;gap:7px;align-items:center;margin:3px 0}.sw{width:20px;height:20px;border-radius:50%}.note{margin-top:9px;max-width:290px;background:#fff5cf;padding:7px;font-size:11px;line-height:1.35}
+.row{display:grid;grid-template-columns:22px 55px 65px;gap:7px;align-items:center;margin:3px 0}.sw{width:20px;height:20px;border-radius:50%}
 
 /* Ajuste específico para celulares: panel compacto, búsqueda siempre visible y leyenda en 2 columnas */
 @media (max-width:600px){
@@ -43,7 +43,6 @@ html,body,#map{height:100%;margin:0}.box{position:absolute;z-index:9999;left:12p
   .sw{width:18px;height:18px}
   .row b{font-size:12px}
   .row span{font-size:11px;white-space:nowrap}
-  .note{display:none}
 }
 </style></head><body><div id="map"></div>
 <div class="box"><h2>G&amp;T SRL</h2><small>Zonas de flete — Neuquén</small>
@@ -53,9 +52,7 @@ html,body,#map{height:100%;margin:0}.box{position:absolute;z-index:9999;left:12p
   <datalist id="barriosList"></datalist>
 </div>
 <div id="leg"></div>
-<div class="note"><b>Punto 0 exacto:</b> -38.910013, -68.105755.<br>
-Los polígonos son los barrios oficiales. La clasificación de esta prueba usa distancia en línea recta desde G&amp;T SRL al centroide de cada polígono. Los rangos A–L son 0–2, 2–4, …, 22–24 km.<br><br>
-<b>Próximo paso:</b> podemos cambiar la clasificación para que use distancia de recorrido vehicular real.</div>
+
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
